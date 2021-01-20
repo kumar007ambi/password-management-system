@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Password Management System</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/ed55d4307f.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">
+        <%= title %>
+      </h2>
+      <div id="loginbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title" style="text-align:center;">Login</div>
+          </div>
+          <div class="panel-body">
+            <form action="/" id="SignupForm" class="form-horizontal" method="post" role="form">
+              <% if(msg !='' ) { %>
+                <div id="signupalert" class="alert alert-danger">
+                  <p style="text-align: center">
+                    <%= msg %>
+                      <% } %>
+                </div>
+
+                <div class="form-group">
+                  <label for="username" class="col-md-3 control-label">User Name</label>
+                  <div class="col-md-9">
+                    <input type="text" class="form-control" name="uname" placeholder="Enter Your User Name">
+                  </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                  <label for="password" class="col-md-3 control-label">Password</label>
+                  <div class="col-md-9">
+                    <input type="password" class="form-control" name="password" placeholder="Enter our password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <br>
+                  <br>
+                  <!-- Button -->
+                  <div class="col-md-offset-3 col-md-9">
+                    <input type="submit" name="submit" value="login" class="btn btn-primary">
+                  </div>
+                </div>
+                <br>
+                <br>
+                <p style="text-align:center;">If you don't have account <a href="/signup">Create New Acoount</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+
+    <h6 style="color: black;text-align: center">Copyright &copy; 2021 All Rights Reserved.</h6>
+    <p style="color: black;text-align: center;">Password Management System.
+      This Site is Created By Ambika Kewat.</p>
+
+
+  </footer>
+</body>
+
+</html>

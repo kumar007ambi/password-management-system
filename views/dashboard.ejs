@@ -1,0 +1,32 @@
+<%- include('header') %>
+
+    <div class="row" style="text-align: center;">
+        <h1>User Dashboard</h1>
+        <br>
+        <div class="conatiner">
+            <div class="col-sm-4 col-xs-12" style="text-align: center;">
+                <div class="info-box" style="text-align: center;">
+                    <span class="info-box-icon bg-aqua"><i class="fa fa-list-alt"></i></span>
+                    <div class="info-box-content" style="text-align: center;">
+                        <span class="info-box-text">Total Password Category</span>
+                        <span class="info-box-number">
+                            <%= totalPassCat %>
+                        </span>
+                    </div><!-- /.info-box-content -->
+                </div><!-- /.info-box -->
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="warning-box">
+                    <span class="info-box-icon bg-warning"><i class="fas fa-key"></i></span>
+                    <div class="info-box-content" style="text-align: center;">
+                        <span class="info-box-text">Total Passwords</span>
+                        <span class="info-box-number">
+                            <%= totalPassword %>
+                        </span>
+                    </div><!-- /.info-box-content -->
+                </div><!-- /.info-box -->
+            </div>
+        </div>
+    </div>
+
+    <%- include('footer') %>
